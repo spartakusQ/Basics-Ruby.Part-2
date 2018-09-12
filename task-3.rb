@@ -6,4 +6,4 @@ loop do
   array_fibonacci  << next_number
 end
 
-print array_fibonacci
+puts array_fibonacci
