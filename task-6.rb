@@ -13,5 +13,9 @@ end
 
 card.each {|product_name, hash| final_amount += hash['цена'] * hash['количество']}
 
-puts card
-puts "Сумма вашей покупки равна: #{final_amount}"
+if final_amount <= 0
+    puts 'До скорой встречи, приходите ещё.'
+  else
+    puts card
+    puts "Сумма вашей покупки равна: #{final_amount}"
+end
