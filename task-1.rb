@@ -11,7 +11,4 @@ months = { 'Январь' => 31,
   'Ноябрь' => 30,
   'Декабрь' => 31,}
 
-months.each {|key, value|
-  if value == 30
-    puts "#{key} #{value} дней"
-  end}
+months.each { |key, value| puts "#{key} #{value} дней" if value == 30 }
